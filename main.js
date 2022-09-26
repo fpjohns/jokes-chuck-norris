@@ -8,6 +8,6 @@ btn.addEventListener("click", (e) => {
       return a.json();
     })
     .then((json) => {
-      result.append(json.value);
+      result.textContent = json.value;
     });
 });
